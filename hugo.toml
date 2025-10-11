@@ -1,0 +1,24 @@
+baseURL = "https://supery.top/"
+languageCode = "zh-cn"
+title = "悲伤土豆"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  
+  [params.homeInfoParams]
+    Title = "悲伤土豆 🥔"
+    Content = "一个有趣的人 · 热爱开发 · 探索无限可能"
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "文章"
+    url = "/posts/"
+    weight = 2
