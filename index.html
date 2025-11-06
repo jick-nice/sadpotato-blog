@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>冠军小助手 - 自动回复工具</title>
-    <meta name="description" content="自动回复工具，让沟通更高效">
+    <title>悲伤土豆 - 进步APP & 冠军小助手</title>
+    <meta name="description" content="进步APP - AI智能任务管理 | 冠军小助手 - 自动回复工具">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,6 +19,12 @@
                 <span class="logo-icon">🥔</span>
                 <span class="logo-text">悲伤土豆</span>
             </div>
+            <div class="nav-center">
+                <div class="project-switch">
+                    <button class="switch-btn active" data-project="progress">进步</button>
+                    <button class="switch-btn" data-project="champion">冠军小助手</button>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">关于</a></li>
                 <li><a href="#product">产品</a></li>
@@ -28,7 +34,564 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 进步APP内容区域 -->
+    <div class="project-content" id="progress-content">
+        <!-- Hero Section - 进步 -->
+        <section class="hero hero-progress">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 2L10 6L14 6.5L11 9.5L12 14L8 11.5L4 14L5 9.5L2 6.5L6 6L8 2Z" fill="currentColor"/>
+                        </svg>
+                        <span>进步 Progress</span>
+                    </div>
+                    <h1 class="hero-title">
+                        重新定义
+                        <br><span class="gradient-text">任务管理与自律</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        全球首款全AI驱动的OKR任务管理系统<br>
+                        从目标设定到达成分析，AI全程智能陪伴
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">AI智能化</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6大</div>
+                            <div class="stat-label">核心模块</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">学习成本</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary btn-large-hero">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 3V13M10 13L6 9M10 13L14 9M3 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>免费下载</span>
+                        </a>
+                        <div class="platform-badges">
+                            <span class="platform-badge">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M14.5 1h-13C.67 1 0 1.67 0 2.5v11c0 .83.67 1.5 1.5 1.5h13c.83 0 1.5-.67 1.5-1.5v-11c0-.83-.67-1.5-1.5-1.5zM8 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                                </svg>
+                                Android
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup-advanced">
+                        <div class="phone-frame">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <div class="app-preview">
+                                    <div class="preview-header">
+                                        <span class="time">9:41</span>
+                                        <span class="icons">
+                                            <span class="signal-icon">📶</span>
+                                            <span class="battery-icon">🔋</span>
+                                        </span>
+                                    </div>
+                                    <div class="preview-content">
+                                        <div class="preview-title">
+                                            <h3>今日任务</h3>
+                                            <span class="task-count">5/8</span>
+                                        </div>
+                                        
+                                        <div class="task-card emergency">
+                                            <div class="task-priority">特急</div>
+                                            <div class="task-content">
+                                                <div class="task-icon emergency-icon">⚡</div>
+                                                <div class="task-details">
+                                                    <p class="task-title">手受伤要包扎</p>
+                                                    <span class="task-meta">临时紧急 · AI已调整优先级</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="task-card completed">
+                                            <div class="task-content">
+                                                <div class="task-icon completed-icon">✓</div>
+                                                <div class="task-details">
+                                                    <p class="task-title">刷题</p>
+                                                    <p class="task-subtitle">100道</p>
+                                                    <span class="task-meta">正确率</span>
+                                                    <div class="task-progress-wrapper">
+                                                        <div class="task-progress">
+                                                            <div class="progress-bar" style="width: 85%"></div>
+                                                        </div>
+                                                        <span class="progress-text">85% · RI</span>
+                                                    </div>
+                                                    <span class="task-status">达标 ✓</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="task-card">
+                                            <div class="task-content">
+                                                <div class="task-icon pending-icon">📝</div>
+                                                <div class="task-details">
+                                                    <p class="task-title">背单词 50个</p>
+                                                    <span class="task-meta">进度 32/50 · 还需18个</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preview-footer">
+                                        <div class="voice-btn">
+                                            🎙️ 语音添加任务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI核心能力 -->
+        <section class="section ai-power">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge-center">
+                        <span class="badge-icon">🤖</span>
+                        <span>100% AI驱动</span>
+                    </div>
+                    <h2>AI不是辅助，而是核心</h2>
+                    <p class="section-subtitle">全球首款每个功能都由AI驱动的任务管理系统</p>
+                </div>
+                
+                <div class="ai-capabilities">
+                    <div class="capability-card">
+                        <div class="capability-icon">🎙️</div>
+                        <h3>智能语音交互</h3>
+                        <p class="capability-desc">直接说话，AI全都懂</p>
+                        <ul class="capability-details">
+                            <li>
+                                <strong>自然语言理解</strong>
+                                <span>说"明天要穿的鞋子洗一下"，AI自动识别为临时常规任务，判断紧急程度，设置截止时间</span>
+                            </li>
+                            <li>
+                                <strong>智能追问</strong>
+                                <span>说"打个电话"，AI会问"给谁打？几点前打？"确保任务完整</span>
+                            </li>
+                            <li>
+                                <strong>全场景对接</strong>
+                                <span>任务添加、修改、查询、数据分析，全部支持语音操作</span>
+                            </li>
+                        </ul>
+                        <div class="capability-example">
+                            <div class="example-dialog">
+                                <div class="dialog-user">💬 "我想把背单词任务改到明天"</div>
+                                <div class="dialog-ai">🤖 已为您将"背单词50个"调整至明天，今日任务已更新</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">🎯</div>
+                        <h3>OKR智能校验</h3>
+                        <p class="capability-desc">确保每个目标都可执行、可衡量</p>
+                        <ul class="capability-details">
+                            <li>
+                                <strong>模糊目标识别</strong>
+                                <span>输入"多刷题"，AI提醒："建议明确具体数量，如'刷1000道题'，这样更容易追踪进度"</span>
+                            </li>
+                            <li>
+                                <strong>KR合理性验证</strong>
+                                <span>AI分析KR与O的关联性，确保核心成果真正支撑总目标</span>
+                            </li>
+                            <li>
+                                <strong>自动任务拆解</strong>
+                                <span>10000道题，100天完成，AI自动计算每天100道，并生成每日固定任务</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">⚖️</div>
+                        <h3>智能优先级管理</h3>
+                        <p class="capability-desc">AI全自动任务分类与排序</p>
+                        <ul class="capability-details">
+                            <li>
+                                <strong>三级紧急程度</strong>
+                                <span>特别紧急（如"手受伤要包扎"）、比较紧急、一般紧急，AI根据任务描述和时间要求自动判断</span>
+                            </li>
+                            <li>
+                                <strong>动态优先级调整</strong>
+                                <span>临时紧急任务出现时，AI自动调整防干扰策略，先解除提醒，处理完自动恢复</span>
+                            </li>
+                            <li>
+                                <strong>任务类型识别</strong>
+                                <span>固定常规（OKR相关）、临时常规、临时紧急，AI自动归类，无需手动选择</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card highlight">
+                        <div class="capability-icon">📊</div>
+                        <h3>RI达标智能分析</h3>
+                        <p class="capability-desc">实时对比，精准反馈</p>
+                        <ul class="capability-details">
+                            <li>
+                                <strong>自动达标判断</strong>
+                                <span>刷题正确率≥70%，AI实时对比用户数据，图表展示达标情况（绿色达标，红色未达标）</span>
+                            </li>
+                            <li>
+                                <strong>趋势分析</strong>
+                                <span>每周、每月达标率统计，AI生成趋势曲线，预测目标完成可能性</span>
+                            </li>
+                            <li>
+                                <strong>差距对比</strong>
+                                <span>对比考试要求（如四级平均正确率），让你清楚知道与目标的距离</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">🧠</div>
+                        <h3>自律分析报告</h3>
+                        <p class="capability-desc">AI深度分析你的进步轨迹</p>
+                        <ul class="capability-details">
+                            <li>
+                                <strong>完成趋势分析</strong>
+                                <span>哪类任务达标率低，哪个时间段效率高，AI都能发现</span>
+                            </li>
+                            <li>
+                                <strong>问题诊断</strong>
+                                <span>分析任务失败原因，是时间分配不合理还是目标设置过高</span>
+                            </li>
+                            <li>
+                                <strong>个性化建议</strong>
+                                <span>根据你的数据，AI给出改进建议，如"建议将刷题任务分散到早晚两个时段"</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">🎨</div>
+                        <h3>智能个性化</h3>
+                        <p class="capability-desc">AI推荐最适合你的设置</p>
+                        <ul class="capability-details">
+                            <li>
+                                <strong>防干扰灵敏度</strong>
+                                <span>根据使用习惯，AI推荐最适合的提醒声音和防干扰级别</span>
+                            </li>
+                            <li>
+                                <strong>任务关联</strong>
+                                <span>云笔记记录"四级单词记忆技巧"，AI自动关联到"背单词"任务</span>
+                            </li>
+                            <li>
+                                <strong>语音助手</strong>
+                                <span>随时说"xxx任务我想明天完成"，AI调用接口自动调整</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 六大核心模块 -->
+        <section class="section modules-detailed">
+            <div class="container">
+                <div class="section-header">
+                    <h2>六大核心模块</h2>
+                    <p class="section-subtitle">完整的任务管理生态系统</p>
+                </div>
+                
+                <div class="modules-list">
+                    <!-- 模块1 -->
+                    <div class="module-detail-card">
+                        <div class="module-header">
+                            <div class="module-number-big">01</div>
+                            <div class="module-title-group">
+                                <h3>今日任务</h3>
+                                <p>三类任务智能管理，优先级AI自动排序</p>
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            <div class="module-feature-group">
+                                <h4>🔵 固定常规任务</h4>
+                                <p>来自OKR的长期目标，AI自动拆解生成</p>
+                                <div class="feature-example-box">
+                                    <span class="example-label">示例</span>
+                                    <span class="example-text">刷题100道（来自"明年2月前过四级"的OKR）</span>
+                                </div>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>🟡 临时常规任务</h4>
+                                <p>日常琐事，AI语音识别自动添加</p>
+                                <div class="feature-example-box">
+                                    <span class="example-label">示例</span>
+                                    <span class="example-text">说"明天要穿的鞋子洗一下"→AI识别为临时常规，今天下午提醒</span>
+                                </div>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>🔴 临时紧急任务</h4>
+                                <p>AI自动识别紧急程度，优先级置顶</p>
+                                <div class="feature-example-box">
+                                    <span class="example-label">示例</span>
+                                    <span class="example-text">"手受伤要包扎"→AI识别为特别紧急，排在最前</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模块2 -->
+                    <div class="module-detail-card highlight-module">
+                        <div class="star-badge">⭐ 核心功能</div>
+                        <div class="module-header">
+                            <div class="module-number-big">02</div>
+                            <div class="module-title-group">
+                                <h3>OKR目标管理</h3>
+                                <p>科学的目标体系，AI全程辅助</p>
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            <div class="okr-flow">
+                                <div class="okr-step">
+                                    <div class="okr-step-icon objective-color">O</div>
+                                    <div class="okr-step-content">
+                                        <h4>Objective - 总目标</h4>
+                                        <p>设定明确的长期目标</p>
+                                        <div class="feature-example-box">
+                                            <span class="example-text">明年2月前通过英语四级</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="okr-step">
+                                    <div class="okr-step-icon kr-color">KR</div>
+                                    <div class="okr-step-content">
+                                        <h4>Key Results - 核心成果</h4>
+                                        <p>AI校验：必须具体、可衡量</p>
+                                        <div class="feature-example-box">
+                                            <span class="example-text">① 刷题10,000道 ② 背单词3,000个</span>
+                                        </div>
+                                        <div class="ai-tip">
+                                            💡 输入"多刷题"→AI提示："建议明确数量"
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="okr-step">
+                                    <div class="okr-step-icon ri-color">RI</div>
+                                    <div class="okr-step-content">
+                                        <h4>Result Indicator - 达标标准</h4>
+                                        <p>AI设置并实时监测达标情况</p>
+                                        <div class="feature-example-box">
+                                            <span class="example-text">刷题正确率 ≥ 70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flow-arrow">↓</div>
+                                <div class="okr-step">
+                                    <div class="okr-step-icon task-color">📋</div>
+                                    <div class="okr-step-content">
+                                        <h4>自动任务拆解</h4>
+                                        <p>AI根据总周期，计算每日任务量</p>
+                                        <div class="feature-example-box">
+                                            <span class="example-text">10,000题 ÷ 100天 = 每天100道</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模块3 -->
+                    <div class="module-detail-card">
+                        <div class="module-header">
+                            <div class="module-number-big">03</div>
+                            <div class="module-title-group">
+                                <h3>AI对接模块</h3>
+                                <p>语音交互，智能追问，全自动化</p>
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            <div class="module-feature-group">
+                                <h4>🎙️ 语音识别</h4>
+                                <p>直接说话添加任务，AI自动分类</p>
+                                <ul class="feature-list-detailed">
+                                    <li>识别任务内容、类型、紧急程度</li>
+                                    <li>自动设置截止时间</li>
+                                    <li>归类到对应分类（固定/临时常规/临时紧急）</li>
+                                </ul>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>💬 智能追问</h4>
+                                <p>信息不完整时，AI主动询问</p>
+                                <div class="feature-example-box">
+                                    <span class="example-label">场景</span>
+                                    <span class="example-text">说"打个电话"→AI问"给谁打？几点前打？"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模块4 -->
+                    <div class="module-detail-card">
+                        <div class="module-header">
+                            <div class="module-number-big">04</div>
+                            <div class="module-title-group">
+                                <h3>防干扰模块</h3>
+                                <p>AI动态调整策略，专注与灵活兼顾</p>
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            <div class="module-feature-group">
+                                <h4>🎯 智能防干扰</h4>
+                                <p>根据任务优先级自动调整</p>
+                                <div class="feature-workflow">
+                                    <div class="workflow-step">
+                                        <span class="step-num">1</span>
+                                        <span>做固定常规任务时，防干扰开启</span>
+                                    </div>
+                                    <div class="workflow-arrow">→</div>
+                                    <div class="workflow-step">
+                                        <span class="step-num">2</span>
+                                        <span>临时紧急任务来了，AI自动解除防干扰</span>
+                                    </div>
+                                    <div class="workflow-arrow">→</div>
+                                    <div class="workflow-step">
+                                        <span class="step-num">3</span>
+                                        <span>处理完成，AI自动恢复防干扰</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>📊 分心原因标注</h4>
+                                <p>AI记录分心原因，不影响自律数据</p>
+                                <div class="ai-tip">
+                                    ✓ 因紧急任务中断，不计入"分心"统计
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模块5 -->
+                    <div class="module-detail-card">
+                        <div class="module-header">
+                            <div class="module-number-big">05</div>
+                            <div class="module-title-group">
+                                <h3>数据统计模块</h3>
+                                <p>RI达标分析，自律报告，趋势预测</p>
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            <div class="module-feature-group">
+                                <h4>📈 RI达标分析页面</h4>
+                                <ul class="feature-list-detailed">
+                                    <li><strong>实时对比</strong> - AI对比每日数据与RI标准</li>
+                                    <li><strong>颜色标注</strong> - 绿色达标，红色未达标，一目了然</li>
+                                    <li><strong>图表展示</strong> - 每周、每月达标率趋势曲线</li>
+                                    <li><strong>差距分析</strong> - 对比考试要求（如四级平均正确率）</li>
+                                </ul>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>🧠 自律分析报告</h4>
+                                <ul class="feature-list-detailed">
+                                    <li><strong>完成趋势</strong> - 分析任务完成规律和变化</li>
+                                    <li><strong>问题诊断</strong> - 哪类任务达标率低，原因是什么</li>
+                                    <li><strong>改进建议</strong> - AI给出个性化优化方案</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 模块6 -->
+                    <div class="module-detail-card">
+                        <div class="module-header">
+                            <div class="module-number-big">06</div>
+                            <div class="module-title-group">
+                                <h3>综合模块</h3>
+                                <p>日历、笔记、个人中心，生态闭环</p>
+                            </div>
+                        </div>
+                        <div class="module-content">
+                            <div class="module-feature-group">
+                                <h4>📅 智能日历</h4>
+                                <ul class="feature-list-detailed">
+                                    <li><strong>颜色标注</strong> - 蓝色（长期目标）、黄色（临时常规）、红色（临时紧急）</li>
+                                    <li><strong>提前提醒</strong> - "明天要穿的鞋子"今天下午就提醒</li>
+                                    <li><strong>AI调整</strong> - 根据任务优先级，动态调整日历</li>
+                                </ul>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>📝 云笔记</h4>
+                                <ul class="feature-list-detailed">
+                                    <li><strong>语音记录</strong> - 说话即记录，AI转文字</li>
+                                    <li><strong>智能关联</strong> - 记录"四级单词技巧"，AI自动关联"背单词"任务</li>
+                                </ul>
+                            </div>
+                            <div class="module-feature-group">
+                                <h4>👤 个人中心</h4>
+                                <ul class="feature-list-detailed">
+                                    <li><strong>AI推荐设置</strong> - 提醒声音、防干扰灵敏度</li>
+                                    <li><strong>语音助手</strong> - "改用户名为XX"，AI调用接口直接修改</li>
+                                    <li><strong>语音反馈</strong> - 说出建议，AI整理成文字提交</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 为什么选择进步 -->
+        <section class="section why-progress">
+            <div class="container">
+                <div class="section-header">
+                    <h2>为什么「进步」与众不同？</h2>
+                    <p class="section-subtitle">不只是任务管理，而是你的AI成长伙伴</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">🎯</div>
+                        <h3>100% AI驱动</h3>
+                        <p>不是加几个AI功能，而是从底层架构就由AI驱动。每个功能背后都有AI在工作，让任务管理真正智能化。</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🗣️</div>
+                        <h3>真正的语音交互</h3>
+                        <p>不是简单的语音输入，而是能理解上下文、主动追问、智能判断的对话式交互。就像和助手说话一样自然。</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">📊</div>
+                        <h3>科学的OKR体系</h3>
+                        <p>不是简单的待办列表，而是从目标到成果的完整方法论。AI帮你确保每个目标都可执行、可追踪、可达成。</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🧠</div>
+                        <h3>深度数据分析</h3>
+                        <p>不只是记录数据，而是分析趋势、诊断问题、给出建议。AI帮你发现自己没注意到的规律和问题。</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">⚡</div>
+                        <h3>智能防干扰</h3>
+                        <p>不是死板的屏蔽通知，而是根据任务优先级动态调整。既保证专注，又不错过紧急事项。</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">💝</div>
+                        <h3>完全免费</h3>
+                        <p>这么强大的功能，完全免费使用。我们相信好的产品应该让每个人都能用上。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 冠军小助手内容区域 -->
+    <div class="project-content hidden" id="champion-content">
+        <!-- Hero Section - 冠军小助手 -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -51,38 +614,6 @@
                     <div class="trophy">🏆</div>
                     <p>冠军小助手</p>
                     <span class="subtitle">让回复更智能</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 关于开发者 -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="section-header">
-                <h2>关于开发者</h2>
-                <p class="section-subtitle">悲伤土豆 · 独立开发者</p>
-            </div>
-            <div class="about-content">
-                <div class="about-card">
-                    <div class="about-icon">💡</div>
-                    <h3>独立开发</h3>
-                    <p>专注于创造实用的小工具，用技术让生活更便利</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🎯</div>
-                    <h3>极简主义</h3>
-                    <p>追求简洁优雅的设计，去除一切冗余，只留下最精华的功能</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🚀</div>
-                    <h3>持续探索</h3>
-                    <p>喜欢钻研技术，用工具丰富大家的工作与生活</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">😄</div>
-                    <h3>有趣幽默</h3>
-                    <p>一个有趣的灵魂，用代码创造快乐和价值</p>
                 </div>
             </div>
         </div>
@@ -268,41 +799,6 @@
         </div>
     </section>
 
-    <!-- 联系客服 -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="contact-box">
-                <div class="contact-icon">💬</div>
-                <h2>获取卡密 · 联系客服</h2>
-                <p>添加客服微信，获取使用卡密并享受技术支持</p>
-                <div class="wechat-id-box">
-                    <div class="wechat-label">客服微信号</div>
-                    <div class="wechat-id" id="wechatId">CRJY_0</div>
-                    <button class="btn-copy" onclick="copyWechat()">
-                        <span id="copyText">📋 复制微信号</span>
-                    </button>
-                </div>
-                <p class="contact-note">请添加客服微信咨询捐赠并获取卡密</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 下载区域 -->
-    <section id="download" class="section download">
-        <div class="container">
-            <div class="download-box">
-                <h2>立即下载冠军小助手</h2>
-                <p>开始你的高效微信自动回复之旅</p>
-                <a href="https://www.doubao.com/drive/s/4a4608e709824100" target="_blank" class="btn btn-large">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M10 3V13M10 13L6 9M10 13L14 9M3 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>下载工具</span>
-                </a>
-                <p class="download-note">✓ 支持 Windows 系统 · 下载后请添加客服微信获取卡密</p>
-            </div>
-        </div>
-    </section>
     <!-- 使用教程 -->
     <section id="tutorial" class="section tutorial">
         <div class="container">
@@ -391,6 +887,145 @@
             <div class="tutorial-footer">
                 <p>遇到问题？</p>
                 <a href="#contact" class="btn btn-secondary">联系客服获取帮助</a>
+            </div>
+        </div>
+        </section>
+    </div>
+    <!-- 结束冠军小助手内容 -->
+
+    <!-- 关于开发者 - 公共section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2>关于开发者</h2>
+                <p class="section-subtitle">悲伤土豆 · 独立开发者</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">💡</div>
+                    <h3>独立开发</h3>
+                    <p>专注于创造实用的小工具，用技术让生活更便利</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>极简主义</h3>
+                    <p>追求简洁优雅的设计，去除一切冗余，只留下最精华的功能</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>持续探索</h3>
+                    <p>喜欢钻研技术，用工具丰富大家的工作与生活</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">😄</div>
+                    <h3>有趣幽默</h3>
+                    <p>一个有趣的灵魂，用代码创造快乐和价值</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 - 动态切换内容 -->
+    <section id="download" class="section download">
+        <div class="container">
+            <div class="download-box-progress" id="progress-download">
+                <div class="download-hero">
+                    <div class="free-badge">
+                        <span class="free-icon">🎉</span>
+                        <span>完全免费</span>
+                    </div>
+                    <h2>立即体验进步APP</h2>
+                    <p class="download-desc">全AI驱动的任务管理系统，助你高效达成每个目标</p>
+                    <div class="download-features">
+                        <div class="download-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2L13 8L20 9L15 14L16 20L10 17L4 20L5 14L0 9L7 8L10 2Z"/>
+                            </svg>
+                            <span>100% AI驱动</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2L13 8L20 9L15 14L16 20L10 17L4 20L5 14L0 9L7 8L10 2Z"/>
+                            </svg>
+                            <span>OKR目标管理</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2L13 8L20 9L15 14L16 20L10 17L4 20L5 14L0 9L7 8L10 2Z"/>
+                            </svg>
+                            <span>语音交互</span>
+                        </div>
+                        <div class="download-feature">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2L13 8L20 9L15 14L16 20L10 17L4 20L5 14L0 9L7 8L10 2Z"/>
+                            </svg>
+                            <span>数据分析</span>
+                        </div>
+                    </div>
+                    <a href="https://www.doubao.com/drive/s/b9e6ed3c210cadc3" target="_blank" class="btn btn-download-main">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 4V16M12 16L7 11M12 16L17 11M4 20H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>免费下载</span>
+                    </a>
+                    <div class="platform-info">
+                        <div class="platform-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.5 1.5h-15C1.67 1.5 1 2.17 1 3v14c0 .83.67 1.5 1.5 1.5h15c.83 0 1.5-.67 1.5-1.5V3c0-.83-.67-1.5-1.5-1.5zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                            </svg>
+                            <span>Android 平台</span>
+                        </div>
+                        <div class="platform-item">
+                            <span class="platform-icon">🚀</span>
+                            <span>无需注册 · 即下即用</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-box hidden" id="champion-download">
+                <h2>立即下载冠军小助手</h2>
+                <p>开始你的高效微信自动回复之旅</p>
+                <a href="https://www.doubao.com/drive/s/4a4608e709824100" target="_blank" class="btn btn-large">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3V13M10 13L6 9M10 13L14 9M3 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>下载工具</span>
+                </a>
+                <p class="download-note">✓ 支持 Windows 系统 · 下载后请添加客服微信获取卡密</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 - 动态切换内容 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-box" id="progress-contact">
+                <div class="contact-icon">💬</div>
+                <h2>反馈与建议</h2>
+                <p>遇到问题或有好的想法？欢迎联系我们</p>
+                <div class="wechat-id-box">
+                    <div class="wechat-label">开发者微信号</div>
+                    <div class="wechat-id" id="wechatIdProgress">CRJY_0</div>
+                    <button class="btn-copy" onclick="copyWechatProgress()">
+                        <span id="copyTextProgress">📋 复制微信号</span>
+                    </button>
+                </div>
+                <p class="contact-note">你的反馈是我们持续改进的动力 💪</p>
+            </div>
+            
+            <div class="contact-box hidden" id="champion-contact">
+                <div class="contact-icon">💬</div>
+                <h2>获取卡密 · 联系客服</h2>
+                <p>添加客服微信，获取使用卡密并享受技术支持</p>
+                <div class="wechat-id-box">
+                    <div class="wechat-label">客服微信号</div>
+                    <div class="wechat-id" id="wechatIdChampion">CRJY_0</div>
+                    <button class="btn-copy" onclick="copyWechatChampion()">
+                        <span id="copyTextChampion">📋 复制微信号</span>
+                    </button>
+                </div>
+                <p class="contact-note">请添加客服微信咨询捐赠并获取卡密</p>
             </div>
         </div>
     </section>

@@ -52,3 +52,94 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// 项目切换功能
+document.addEventListener('DOMContentLoaded', () => {
+    const switchBtns = document.querySelectorAll('.switch-btn');
+    const progressContent = document.getElementById('progress-content');
+    const championContent = document.getElementById('champion-content');
+    const progressDownload = document.getElementById('progress-download');
+    const championDownload = document.getElementById('champion-download');
+    const progressContact = document.getElementById('progress-contact');
+    const championContact = document.getElementById('champion-contact');
+    
+    switchBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const project = btn.getAttribute('data-project');
+            
+            // 更新按钮状态
+            switchBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // 切换内容
+            if (project === 'progress') {
+                progressContent.classList.remove('hidden');
+                championContent.classList.add('hidden');
+                progressDownload.classList.remove('hidden');
+                championDownload.classList.add('hidden');
+                progressContact.classList.remove('hidden');
+                championContact.classList.add('hidden');
+            } else {
+                progressContent.classList.add('hidden');
+                championContent.classList.remove('hidden');
+                progressDownload.classList.add('hidden');
+                championDownload.classList.remove('hidden');
+                progressContact.classList.add('hidden');
+                championContact.classList.remove('hidden');
+            }
+            
+            // 平滑滚动到顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+});
+
+// 复制进步APP微信号
+function copyWechatProgress() {
+    const wechatId = document.getElementById('wechatIdProgress').textContent;
+    const copyText = document.getElementById('copyTextProgress');
+    
+    navigator.clipboard.writeText(wechatId).then(() => {
+        copyText.textContent = '✓ 已复制';
+        setTimeout(() => {
+            copyText.textContent = '📋 复制微信号';
+        }, 2000);
+    }).catch(err => {
+        const textArea = document.createElement('textarea');
+        textArea.value = wechatId;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        copyText.textContent = '✓ 已复制';
+        setTimeout(() => {
+            copyText.textContent = '📋 复制微信号';
+        }, 2000);
+    });
+}
+
+// 复制冠军小助手微信号
+function copyWechatChampion() {
+    const wechatId = document.getElementById('wechatIdChampion').textContent;
+    const copyText = document.getElementById('copyTextChampion');
+    
+    navigator.clipboard.writeText(wechatId).then(() => {
+        copyText.textContent = '✓ 已复制';
+        setTimeout(() => {
+            copyText.textContent = '📋 复制微信号';
+        }, 2000);
+    }).catch(err => {
+        const textArea = document.createElement('textarea');
+        textArea.value = wechatId;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        copyText.textContent = '✓ 已复制';
+        setTimeout(() => {
+            copyText.textContent = '📋 复制微信号';
+        }, 2000);
+    });
+}
